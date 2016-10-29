@@ -1,0 +1,91 @@
+/*脚部的样式*/
+.footerBox{
+	width: 100%;
+	margin-top: 10px;
+}
+.footer{
+	width: 1210px;
+	margin: 0 auto;
+}
+/*脚部的头部*/
+.footer .footerTop{
+	overflow: hidden;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #ccc;
+}
+.footer .footerTop dl{
+	width: 200px;
+	float: left;
+}
+.footer .footerTop dl dt{
+	font-size: 16px;
+	color: #666666;
+	line-height: 30px;
+}
+.footer .footerTop dl dd p{
+	line-height: 20px;
+}
+.footer .footerTop dl dd p a{
+	color: #666;
+}
+.footer .footerTop dl dd p a:hover{
+	color: #B1191A;
+}
+.footer .footerTop .feature{
+	width: 100px;
+}
+.footer .footerTop .cover{
+	width: 190px;
+	height: 168px;
+	padding-left: 80px;
+	padding-right: 40px;
+	background: url(../img/footer/20130330B_1.png) no-repeat 0 -130px;
+	color: #666;
+}
+.footer .footerTop .cover a{
+	float: right;
+}
+
+/*脚部的底部*/
+.footer .footerBottom{
+	padding-top: 20px;
+	color: #666;
+	text-align: center;
+	padding-bottom: 30px;
+}
+.footer .footerBottom a{
+	color: #666;
+}
+.footer .footerBottom a:hover{
+	color: #B1191A;
+}
+.footer .footerBottom .footerNav{
+	overflow: hidden;
+	width: 1000px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+.footerNav li{
+	float: left;
+}
+.footerNav li a{
+	padding: 0 10px 0 12px;
+}
+.footer .footerBottom p{
+	height: 22px;
+	line-height: 22px;
+}
+.footer .footerBottom .p1 img{
+	display: inline-block;
+	vertical-align: -4px;
+}
+.footer .footerBottom .footerImgList{
+	overflow: hidden;
+	width: 580px;
+	margin: 0 auto;
+	margin-top: 26px;
+}
+.footer .footerBottom .footerImgList a{
+	float: left;
+	margin-right: 13px;
+}

@@ -1,0 +1,205 @@
+/*3楼*/
+.floor3Box{
+	width: 100%;
+	margin-top: 20px;
+}
+.floor3{
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*3楼的左部*/
+.floor3 .floor3Left{
+	width: 330px;
+	height: 237px;
+	padding-top: 237px;
+	float: left;
+	background: url(../img/floor3/001.jpg) no-repeat 0 0;
+}
+/*3楼的左部的上部*/
+.floor3 .floor3Left .floor3LeftTop{
+	overflow: hidden;
+	background-color: #d9e6ec;
+	padding: 10px 25px;
+}
+.floor3 .floor3Left .floor3LeftTop li{
+	float: left;
+	height: 26px;
+	line-height: 26px;
+	margin-right: 30px;
+}
+.floor3 .floor3Left .floor3LeftTop li a{
+	padding-left: 30px;
+	color: #666;
+}
+.floor3 .floor3Left .floor3LeftTop li a:hover{
+	color: #B1191A;
+}
+.floor3 .floor3Left .floor3LeftTop .floor3LeftTopList1{
+	background: url(../img/floor3/mobilesicon.png) no-repeat 0 0;
+}
+.floor3 .floor3Left .floor3LeftTop .floor3LeftTopList2{
+	background: url(../img/floor3/mobilesicon.png) no-repeat 0 -26px;
+}
+.floor3 .floor3Left .floor3LeftTop .floor3LeftTopList3{
+	background: url(../img/floor3/mobilesicon.png) no-repeat 0 -52px;
+}
+/*3楼的左部的下部*/
+.floor3 .floor3Left .floor3LeftBottom{
+	background-color: #e8e7f4;
+	padding: 24px;
+	height: 144px;
+}
+.floor3 .floor3Left .floor3LeftBottom .phoneNewsList{
+	overflow: hidden;
+}
+.phoneNewsList li{
+	float: left;
+	line-height: 24px;
+	margin-right: 25px;
+}
+.phoneNewsList li a{
+	color: #666;
+}
+.phoneNewsList li a:hover{
+	color: #B1191A;
+}
+.floor3 .floor3Left .floor3LeftBottom .phoneImf{
+	overflow: hidden;
+	float: left;
+	width: 140px;
+	margin-top: 10px;
+}
+.phoneImf li{
+	float: left;
+	line-height: 24px;
+	margin-right: 10px;
+}
+.phoneImf li a{
+	color: #999;
+}
+.phoneImf li a:hover{
+	color: #B1191A;
+}
+.phoneImf li .phoneImfActive{
+	color: #B1191A;
+}
+
+/*3楼的右边*/
+.floor1 .floor3Right{
+	float: left;
+	width: 880px;
+	height: 475px;
+	position: relative;
+}
+.floor1 .floor3Right .floor3Box1{
+	width: 880px;
+	height: 475px;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.floor3Box1 .floor3Scroll{
+	width: 439px;
+	height: 235px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.floor3Box1 .floor3Scroll #floor3ScrollList{
+	width: 2195px;
+	height: 235px;
+	position: absolute;
+	left: 0;
+	top: 0;
+} 
+.floor3Box1 .floor3Scroll #floor3ScrollList li{
+	width: 439px;
+	height: 235px;
+	float: left;
+}
+/*下标的样式*/
+.floor3 .floor3Right .floor3Box1 .floor3Scroll #floor3NumList{
+	position: absolute;
+	width: 70px;
+	height: 10px;
+	line-height: 10px;
+	left: 50%;
+	margin-left: -35px;
+	bottom: 6px;
+}
+#floor3NumList li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #3e3e3e;
+	margin-right: 6px;
+	cursor: pointer;
+}
+#floor3NumList .floor3NumListActive{
+	background-color: #B1191A;
+}
+/*轮播图中的上一张和下一张*/
+.floor3Scroll span{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	background: rgba(68, 68, 68, 0.4);
+	top: 50%;
+	margin-top: -30px;
+	cursor: pointer;
+	display: none;
+}
+.floor3Scroll .floor3ToLeft{
+	left: 0;
+}
+.floor3Scroll .floor3ToRight{
+	right: 0;
+}
+
+.floor3Box1 > a{
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/*3楼中的其它隐藏div的样式*/
+.floor3Right .floor3Box2{
+	overflow: hidden;
+	display: none;
+}
+.floor3Right .floor3Box2 li{
+	float: left;
+	width: 189px;
+	height: 206px;
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.floor3Right .floor3Box2 li dl dt img{
+	margin: 0 auto;
+}
+.floor3Right .floor3Box2 .floor3Box2ListDesc{
+	display: block;
+	height: 44px;
+	line-height: 22px;
+	overflow: hidden;
+	color: #666;
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+.floor3Right .floor3Box2 .floor3Box2ListDesc:hover{
+	color: #C81623;
+}
+.floor3Right .floor3Box2 .floor3Box2ListPrice{
+	font-size: 16px;
+	color: #e4393c;
+}

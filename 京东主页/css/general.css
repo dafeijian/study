@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img, em{ 
+	margin: 0; 
+	padding: 0; 
+} 
+fieldset, img{ 
+	border: none; 
+}
+img{
+	display: block;
+}
+ul, ol{ 
+	list-style: none; 
+}                      
+body{ 
+	font: 12px/20px "微软雅黑","宋体","Arial Narrow",HELVETICA;
+	background: #fff; 
+	overflow-x: hidden;
+}
+a, u{ 
+	text-decoration: none;
+}
+/*--- 清除浮动 ----*/
+.clear:after{
+　	clear: both;
+	content: ".";
+　	height: 0;
+	width: 0;
+	font-size: 0;
+　	visibility: hidden;
+　	display: block;
+}

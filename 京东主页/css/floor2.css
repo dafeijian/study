@@ -1,0 +1,210 @@
+/*2楼*/
+.floor2Box{
+	width: 100%;
+	margin-top: 20px;
+}
+.floor2{
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+/*2楼的左部*/
+.floor2 .floor2Left{
+	width: 210px;
+	height: 238px;
+	padding-top: 236px;
+	background: url(../img/floor2/001.jpg) no-repeat;
+	float: left;
+}
+/*2楼的左部的上部*/
+.floor2 .floor2Left .floor2LeftTop{
+	overflow: hidden;
+	background: #e4f6fd;
+	padding: 10px;
+}
+.floor2 .floor2Left .floor2LeftTop li{
+	float: left;
+}
+.floor2 .floor2Left .floor2LeftTop li a{
+	display: block;
+	width: 58px;
+	height: 26px;
+	line-height: 26px;
+	color: #666666;
+	padding-left: 30px;
+}
+.floor2 .floor2Left .floor2LeftTop a:hover{
+	color: #B1191A;
+}
+.floor2 .floor2Left .floor2LeftTop .floor2LeftTopA1 a{
+	background: url(../img/floor2/cosmeticsicon.png) no-repeat 0 0;
+	margin-bottom: 20px;
+	margin-right: 10px;
+}
+.floor2 .floor2Left .floor2LeftTop .floor2LeftTopA2 a{
+	background: url(../img/floor2/cosmeticsicon.png) no-repeat 0 -26px;
+	margin-bottom: 20px;
+}
+.floor2 .floor2Left .floor2LeftTop .floor2LeftTopA3 a{
+	background: url(../img/floor2/cosmeticsicon.png) no-repeat 0 -52px;
+	margin-right: 10px;
+}
+.floor2 .floor2Left .floor2LeftTop .floor2LeftTopA4 a{
+	background: url(../img/floor2/cosmeticsicon.png) no-repeat 0 -78px;
+}
+/*2楼的左部的下部*/
+.floor2 .floor2Left .floor2LeftBottom{
+	background-color: #eff9fe;
+	height: 100px;
+	padding: 23px;
+}
+.floor2 .floor2Left .floor2LeftBottom a:hover{
+	color: #B1191A;
+}
+.floor2 .floor2Left .floor2LeftBottom p{
+	line-height: 26px;
+}
+.floor2 .floor2Left .floor2LeftBottom p a{
+	color: #666;
+}
+.floor2 .floor2Left .floor2LeftBottom .floor2LeftBottomList{
+	overflow: hidden;
+	margin-top: 6px;
+}
+.floor2 .floor2Left .floor2LeftBottom .floor2LeftBottomList li{
+	float: left;
+	margin-right: 12px;
+	line-height: 24px;
+}
+.floor2 .floor2Left .floor2LeftBottom .floor2LeftBottomList li a{
+	color: #999;
+}
+.floor2 .floor2Left .floor2LeftBottom .floor2LeftBottomList li a:hover{
+	color: #B1191A;
+}
+.floor2 .floor2Left .floor2LeftBottom .floor2LeftBottomList .floor2LeftActive{
+	color: #B1191A;
+}
+
+/*2楼的右部*/
+.floor2Right{
+	width: 1000px;
+	height: 474px;
+	position: relative;
+	float: left;
+}
+.floor2Right .floor2Box1{
+	width: 1000px;
+	height: 474px; 
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.floor2Right .floor2Box1 .floor2Scroll{
+	width: 339px;
+	height: 473px;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.floor2Right .floor2Box1 .floor2Scroll #floor2ScrollList{
+	width: 1695px;
+	height: 473px;
+	position: absolute;
+}
+#floor2ScrollList li{
+	width: 339px;
+	height: 473px;
+	float: left;
+}
+#floor2ScrollList li a{
+	display: block;
+}
+#floor2ScrollList li a:first-child{
+	border-bottom: 1px dashed #ccc;
+}
+.floor2Right .floor2Box1 > a{
+	float: left;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+}
+/*下标的样式*/
+.floor2 .floor2Right .floor2Box1 .floor2Scroll #floor2NumList{
+	position: absolute;
+	width: 70px;
+	height: 10px;
+	line-height: 10px;
+	left: 50%;
+	margin-left: -35px;
+	bottom: 6px;
+}
+#floor2NumList li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #3e3e3e;
+	margin-right: 6px;
+	cursor: pointer;
+}
+#floor2NumList .floor2NumListActive{
+	background-color: #B1191A;
+}
+/*轮播图中的上一张和下一张*/
+.floor2Scroll span{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	background: rgba(68, 68, 68, 0.4);
+	top: 50%;
+	margin-top: -30px;
+	cursor: pointer;
+	display: none;
+}
+.floor2Scroll .floor2ToLeft{
+	left: 0;
+}
+.floor2Scroll .floor2ToRight{
+	right: 0;
+}
+
+/*其它的商品列表框*/
+.floor2Right .floor2Box2{
+	overflow: hidden;
+	display: none;
+}
+.floor2Right .floor2Box2 li{
+	float: left;
+	width: 169px;
+	height: 206px;
+	padding: 15px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.floor2Right .floor2Box2 li dl dt img{
+	margin: 0 auto;
+}
+.floor2Right .floor2Box2 .floor2Box2ListDesc{
+	display: block;
+	height: 44px;
+	line-height: 22px;
+	overflow: hidden;
+	color: #666;
+	margin-top: 10px;
+	margin-bottom: 4px;
+}
+.floor2Right .floor2Box2 .floor2Box2ListDesc:hover{
+	color: #C81623;
+}
+.floor2Right .floor2Box2 .floor2Box2ListPrice{
+	font-size: 16px;
+	color: #e4393c;
+}

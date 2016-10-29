@@ -1,0 +1,285 @@
+/*1楼*/
+.floor1Box{
+	width: 100%;
+	margin-top: 30px;
+}
+.floor1{
+	width: 1210px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.floorHeader{
+	height: 34px;
+	line-height: 34px;
+	border-bottom: 1px solid #c81623;
+}
+.floorHeader h3{
+	height: 34px;
+	font-size: 18px;
+	font-weight: 100;
+	width: 140px;
+	float: left;
+	background: url(../img/floor1/product_home_1.0.0.png) no-repeat 0 3px;
+}
+.floorHeader h3 span{
+	display: inline-block;
+	width: 40px;
+	color: #fff;
+	font-size: 16px;
+}
+.floorHeader .floorNav{
+	float: right;
+	height: 34px;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.floorHeader .floorNav li{
+	float: left;
+	border-top: 1px solid #ccc;
+}
+.floorHeader .floorNav .floorNavActive{
+	border-top: 3px solid #c81623;
+	border-left: 1px solid #c81623;
+	border-right: 1px solid #c81623;
+	height: 32px;
+	line-height: 30px;
+	margin-bottom: -2px;
+	margin-left: -1px;
+	background-color: #fff;
+}
+.floorHeader .floorNav li a{
+	padding: 0 16px;
+	color: #666;
+	cursor: pointer;
+	border-right: 1px solid #ccc;
+}
+.floorHeader .floorNav .lastLi a{
+	border-right: 1px solid #fff;
+}
+/*1楼的左边*/
+.floor1 .floor1Left{
+	float: left;
+	overflow: hidden;
+}
+.floor1 .floor1Left .floor1LeftTop{
+	height: 343px;
+	overflow: hidden;
+	position: relative;
+}
+.floor1 .floor1Left #clothesList{
+	width: 306px;
+	padding-left: 24px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: rgba(220, 222, 238, 0.5);
+}
+#clothesList li{
+	float: left;
+	margin-right: 40px;
+	padding: 10px 0;
+}
+#clothesList li a{
+	display: block;
+	padding-left: 32px;
+	color: #666666;
+	height: 26px;
+	line-height: 26px;
+}
+#clothesList li a:hover{
+	color: #c81623;
+}
+#clothesList li .clothes1{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 0;
+}
+#clothesList li .clothes2{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 -26px;
+}
+#clothesList li .clothes3{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 -52px;
+}
+#clothesList li .clothes4{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 -78px;
+}
+#clothesList li .clothes5{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 -104px;
+}
+#clothesList li .clothes6{
+	background: url(../img/floor1/clothesicon8.png) no-repeat 0 -130px;
+}
+/*左边的下部*/
+.floor1 .floor1Left .floor1LeftBottom{
+	height: 90px;
+	width: 290px;
+	background-color: #eaf0f5;
+	padding: 20px;
+}
+.floor1 .floor1Left .floor1LeftBottom .clothesList2{
+	overflow: hidden;
+	width: 120px;
+	float: left;
+	margin-right: 24px;
+}
+.floor1LeftBottom .clothesList2 li{
+	float: left;
+	margin-right: 10px;
+	line-height: 24px;
+}
+.floor1LeftBottom .clothesList2 li a{
+	color: #999;
+}
+.floor1LeftBottom .clothesList2 li a:hover{
+	color: #c81623;
+}
+.floor1LeftBottom .clothesList2 li .clothesList2Active{
+	color: #c81623;
+}
+/*左边的脚部*/
+.floor1 .floor1Left .floor1LeftFooter{
+	border: 1px solid #ccc;
+}
+
+/*右边*/
+.floor1 .floor1Right{
+	float: left;
+	width: 880px;
+	height: 633px;
+	position: relative;
+}
+.floor1 .floor1Right .floor1Box1{
+	width: 880px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+.floor1 .floor1Right .floor1Box1 > a{
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+.floor1 .floor1Right .floor1Box1 .fRight{
+	float: right;
+}
+/*1楼中的轮播图*/
+.floor1 .floor1Right .floor1Box1 .floor1RightScroll{
+	width: 439px;
+	height: 315px;
+	float: left;
+	background: #fff;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	position: relative;
+	overflow: hidden;
+}
+.floor1 .floor1Right .floor1Box1 .floor1RightScroll #floor1ImgList{
+	position: absolute;
+	width: 2195px;
+	height: 315px;
+	left: 0;
+	top: 0;
+}
+#floor1ImgList li{
+	float: left;
+	width: 439px;
+}
+.floor1 .floor1Right .floor1Box1 .floor1RightScroll #floor1NumList{
+	position: absolute;
+	width: 70px;
+	height: 10px;
+	line-height: 10px;
+	left: 50%;
+	margin-left: -35px;
+	bottom: 6px;
+}
+#floor1NumList li{
+	float: left;
+	width: 10px;
+	height: 10px;
+	border-radius: 5px;
+	background-color: #3e3e3e;
+	margin-right: 6px;
+	cursor: pointer;
+}
+#floor1NumList .floor1NumListActive{
+	background-color: #B1191A;
+}
+/*轮播图中的上一张和下一张*/
+.floor1RightScroll span{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	background: rgba(68, 68, 68, 0.4);
+	top: 50%;
+	margin-top: -30px;
+	cursor: pointer;
+	display: none;
+}
+.floor1RightScroll .floor1ToLeft{
+	left: 0;
+}
+.floor1RightScroll .floor1ToRight{
+	right: 0;
+}
+
+/*1楼中的其它隐藏div的样式*/
+.floor1 .floor1Right .floor1Box2{
+	width: 880px;
+	overflow: hidden;
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.floor1 .floor1Right .floor1Box2 .floor1Box2Top{
+	width: 187px;
+	height: 198px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	float: left;
+	padding: 19px 16px;
+}
+.floor1 .floor1Right .floor1Box2 .floor1Box2Top img{
+	margin: 0 auto;
+}
+.floor1 .floor1Right .floor1Box2 .floor1Box2Top .floor1Box2Desc{
+	display: block;
+	line-height: 22px;
+	height: 44px;
+	color: #666;
+	margin-top: 10px;
+}
+.floor1 .floor1Right .floor1Box2 .floor1Box2Top .floor1Box2Desc:hover{
+	color: #C81623;
+}
+.floor1 .floor1Right .floor1Box2 .floor1Box2Top .floor1Box2Price{
+	font-size: 16px;
+	color: #e4393c;
+}
+.floor1 .floor1Right .floor1Box2 > img{
+	float: left;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+}
+
+/*1楼下面的商品列表*/
+.adv{
+	width: 1210px;
+	margin: 10px auto;
+	padding: 13px 0;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+.adv a{
+	float: left;
+	width: 120px;
+	border-right: 1px dotted #ccc;
+}
+.adv a:last-child{
+	border-right: none
+}

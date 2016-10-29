@@ -1,0 +1,708 @@
+/*---- banner ------*/
+.bannerBox{
+	width: 100%;
+}
+.banner{
+	width: 1210px;
+	margin: 0 auto;
+	height: 466px;
+}
+.banner #allGoodsList{
+	background-color: #c81623;
+	width: 209px;
+	color: #fff;
+	font-size: 14px;
+	padding: 0 0 1px 1px;
+	position: relative;
+	float: left;
+}
+.banner #allGoodsList > li{
+	padding-left: 10px;
+	height: 31px;
+	line-height: 31px;
+}
+.banner #allGoodsList .hover{
+	background-color: #f7f7f7;
+	color: #C81623;
+}
+.banner #allGoodsList > li:hover{
+	background-color: #f7f7f7;
+	color: #C81623;
+}
+.banner #allGoodsList > li:hover span{
+	display: none;
+}
+.banner #allGoodsList > li > span{
+	float: right;
+	margin-right: 14px;
+}
+/*------ 商品细节 ------*/
+.banner #allGoodsList .details{
+	position: absolute;
+	width: 1000px;
+	background-color: #f7f7f7;
+	border: 1px solid #c81623;
+	border-left: none;
+	color: #666;
+	left: 210px;
+	top: -1px;
+	display: none;
+	overflow: hidden;
+	z-index: 100;
+}
+#allGoodsList .details .details-left{
+	width: 760px;
+	padding: 10px 20px;
+	float: left;
+}
+/*---- 左边的头部 ------*/
+#allGoodsList .details .details-left .details-left-top{
+	overflow: hidden;
+}
+.details-left-top > li{
+	float: left;
+	margin-right: 10px;
+}
+.details-left-top > li > a{
+	display: block;
+	background-color: #7c7171;
+	color: #fff;
+	height: 24px;
+	line-height: 24px;
+	padding-left: 6px;
+}
+.details-left-top > li > a > span{
+	display: inline-block;
+	width: 23px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+	margin-top: 2px;
+	margin-left: 6px;
+	background-color: #5c5251;
+}
+.details-left-top > li > a:hover{
+	background-color: #c81623;
+}
+.details-left-top > li > a:hover span{
+	background-color: #b1191a;
+}
+/*------- 左边的主要内容 ------*/
+#allGoodsList .details .details-left .details-left-content{
+	overflow: hidden;
+	margin-top: 10px;
+}
+.details-left-content dt{
+	float: left;
+	color: #666666;
+	margin-right: 12px;
+	height: 24px;
+	line-height: 24px;
+	padding: 10px 0;
+}
+.details-left-content dt a{
+	font-weight: bold;
+	float: left;
+	text-align: right;
+	margin-right: 5px;
+	width: 60px;
+}
+.details-left-content dt span{
+	float: left;
+	width: 20px;
+}
+.details-left-content dd{
+	float: left;
+	width: 600px;
+	border-bottom: 1px solid #e0e0e0;
+	padding: 10px 0;
+}
+.details-left-content dd > ul > li{
+	height: 24px;
+	line-height: 24px;
+	float: left;
+}
+.details-left-content dd > ul > li a{
+	color: #666;
+	padding: 0 10px;
+	border-left: 1px solid #e0e0e0;
+	font-size: 12px;
+}
+.details-left-content dd > ul > li a:hover{
+	color: #C81623;
+}
+/*右边的内容*/
+#allGoodsList .details .details-right{
+	width: 168px;
+	margin-right: 20px;
+	margin-top: 20px;
+	float: right;
+}
+#allGoodsList .details .details-right .details-right-top{
+	width: 168px;
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+.details-right-top a{
+	float: left;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	width: 83px;
+	height: 35px;
+	overflow: hidden;
+}
+#allGoodsList .details .details-right .details-right-bottom{
+	width: 168px;
+}
+.details-right-bottom a{
+	display: block;
+	margin-top: 2px;
+}
+
+/*图片轮播*/
+.banner .bannerImgPlay{
+	float: left;
+	margin-left: 10px;
+	margin-top: 12px;
+	width: 730px;
+	height: 454px;
+	position: relative;
+}
+.banner .bannerImgPlay #bannerImgList li{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: none;
+}
+.banner .bannerImgPlay #bannerNumList{
+	width: 144px;
+	position: absolute;
+	bottom: 5px;
+	left: 50%;
+	margin-left: -70px;
+	overflow: hidden;
+}
+.banner .bannerImgPlay #bannerNumList li{
+	float: left;
+	width: 20px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	border-radius: 10px;
+	background-color: #3e3e3e;
+	color: #fff;
+	margin-right: 4px;
+	cursor: pointer;
+}
+.banner .bannerImgPlay #bannerNumList .bannerImgActive{
+	background-color: #b61b1f;
+}
+.banner .bannerImgPlay a{
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 60px;
+	font-size: 30px;
+	text-align: center;
+	line-height: 60px;
+	color: #fff;
+	background: rgba(68, 68, 68, 0.4);
+	top: 50%;
+	margin-top: -30px;
+	cursor: pointer;
+	display: none;
+}
+.banner .bannerImgPlay .toLeft{
+	left: 0;
+}
+.banner .bannerImgPlay .toRight{
+	right: 0;
+}
+
+/*右边的信息栏*/
+.banner .bannerRight{
+	float: right;
+	width: 249px;
+	margin-top: 10px;
+}
+/*京东新闻*/
+.banner .bannerRight .JDnews{
+	border: 1px solid #ccc;
+}
+.banner .bannerRight .JDnews h3{
+	font-size: 15px;
+	font-weight: 100;
+	height: 32px;
+	line-height: 32px;
+	color: #666666;
+	padding: 0 16px;
+	border-bottom: 1px dotted #ccc;
+}
+.banner .bannerRight .JDnews h3 a{
+	float: right;
+	font-size: 12px;
+	color: #666;
+}
+.banner .bannerRight .JDnews h3 a:hover{
+	color: #B1191A;
+}
+.banner .bannerRight .JDnews .JDnewsList{
+	padding: 6px 16px;
+}
+.banner .bannerRight .JDnews .JDnewsList li{
+	line-height: 24px;
+}
+.banner .bannerRight .JDnews .JDnewsList li a{
+	color: #666;
+}
+.banner .bannerRight .JDnews .JDnewsList li a:hover{
+	color: #B1191A;
+}
+/*京东服务列表*/
+.banner .bannerRight .serviceList{
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+}
+.serviceList li{
+	float: left;
+}
+.serviceList li a{
+	display: block;
+	width: 61px;
+	height: 54px;
+	padding-top: 13px;
+	text-align: center;
+	line-height: 32px;
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	color: #666;
+}
+.serviceList li a:hover{
+	color: #B1191A;
+}
+.serviceList li a span{
+	display: block;
+	width: 25px;
+	height: 25px;
+	margin: 0 auto;
+}
+/*服务细节*/
+.banner .bannerRight .serviceDetails{
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+.serviceDetails .serviceHeader{
+	overflow: hidden;
+	border-left: 1px solid #ccc;
+}
+.serviceDetails .serviceHeader li{
+	float: left;
+	height: 27px;
+	width: 61px;
+	text-align: center;
+	line-height: 27px;
+	color: #666;
+	border-right: 1px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	cursor: pointer;
+}
+.serviceDetails .serviceHeader .headerActive{
+	border-top: 2px solid #c81623;
+	border-bottom: none;
+	height: 26px;
+}
+.serviceDetails .close{
+	position: absolute;
+	right: 0;
+	top: 28px;
+	display: block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	text-align: center;
+	color: #666;
+	cursor: pointer;
+	z-index: 100;
+}
+.serviceDetails .close:hover{
+	background-color: #ccc;
+	color: #fff;
+}
+/*主要服务*/
+.serviceDetails .mainService{
+	display: none;
+}
+
+/*话费*/
+.serviceDetails .phoneFare{
+	width: 227px;
+	padding: 10px 10px 0;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.serviceDetails .phoneFare .fareList{
+	overflow: hidden;
+}
+.serviceDetails .phoneFare .fareList li{
+	float: left;
+	margin-right: 10px;
+	color: #666;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.serviceDetails .phoneFare .fareList .fareActive{
+	background-color: #c81623;
+	color: #fff;
+}
+/*话费充值*/
+.serviceDetails .phoneFare .pf{
+	margin-top: 10px;
+	display: none;
+}
+.serviceDetails .phoneFare .input{
+	margin-bottom: 10px;
+}
+.serviceDetails .phoneFare .input > span{
+	display: inline-block;
+	margin-right: 9px;
+	color: #666;
+}
+.serviceDetails .phoneFare .phoneNum{
+	width: 100px;
+	height: 20px;
+	padding: 0 5px;
+	border: 1px solid #ccc;
+	font-size: 12px;
+}
+.serviceDetails .phoneFare .monthFare{
+	width: 60px;
+	height: 20px;
+	border: 1px solid #ccc;
+	color: #666;
+}
+.serviceDetails .phoneFare .changeFare{
+	width: 67px;
+	height: 26px;
+	color: #fff;
+	background-color: #c81623;
+	font-size: 12px;
+	border: none;
+	border-radius: 3px;
+}
+.serviceDetails .phoneFare .hot{
+	margin-top: 16px;
+	margin-bottom: 10px;
+}
+.serviceDetails .phoneFare .hot a{
+	color: #005ea7;
+	padding-left: 30px;
+	background: url(../img/banner/iframe-hot.png) no-repeat 0 center;
+}
+
+/*机票*/
+.serviceDetails .planeTicket{
+	width: 237px;
+	height: 165px;
+	padding: 10px 0 0 10px;
+	border: 1px solid #ccc;
+	border-top: none;
+	color: #666;
+	position: relative;
+}
+.serviceDetails .planeTicket .ticketList{
+	overflow: hidden;
+}
+.serviceDetails .planeTicket .ticketList li{
+	float: left;
+	margin-right: 10px;
+	color: #666;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.serviceDetails .planeTicket .ticketList .ticketActive{
+	background-color: #c81623;
+	color: #fff;
+}
+.planeTicket .ticketBox{
+	position: absolute;
+	width: 952px;
+	height: 135px;
+	top: 34px;
+	left: 10px;
+}
+.planeTicket .ticketBox .buyTicket{
+	float: left;
+	width: 238px;
+}
+/*是否往返*/
+.planeTicket .pt{
+	margin-top: 10px;
+}
+.planeTicket .way{
+	vertical-align: -2px;
+}
+.planeTicket .startPosition{
+	overflow: hidden;
+}
+.planeTicket .startPosition u{
+	display: block;
+	width: 28px;
+	height: 26px;
+	background: url(../img/banner/change-city.jpg) no-repeat center;
+	float: left;
+}
+.planeTicket .startPosition i{
+	display: block;
+	width: 28px;
+	height: 26px;
+	float: left;
+}
+.planeTicket .startPosition p{
+	width: 90px;
+	height: 26px;
+	position: relative;
+	float: left;
+}
+.planeTicket .startPosition input{
+	width: 50px;
+	height: 22px;
+	border: 1px solid #ccc;
+	padding-left: 40px;
+}
+.planeTicket .startPosition span{
+	display: block;
+	width: 34px;
+	height: 24px;
+	line-height: 24px;
+	text-align: center;
+	background-color: #f5f5f5;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+}
+.planeTicket .ticketSearch input{
+	width: 67px;
+	height: 26px;
+	color: #fff;
+	background-color: #c81623;
+	font-size: 12px;
+	border: none;
+	border-radius: 3px;
+	margin-right: 12px;
+}
+.planeTicket .ticketSearch a{
+	color: #666;
+}
+.planeTicket .ticketSearch a:hover{
+	color: #B1191A;
+}
+
+/*特惠活动*/
+.planeTicket .activity{
+	overflow: hidden;
+	margin-top: 10px;
+	padding: 8px 0 10px;
+}
+.planeTicket .activity a{
+	float: left;
+	margin-right: 10px;
+}
+
+/*电影票*/
+.serviceDetails .movie{
+	width: 237px;
+	padding: 10px 0 0 10px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.serviceDetails .movie .movieList{
+	overflow: hidden;
+}
+.serviceDetails .movie .movieList li{
+	float: left;
+	margin-right: 10px;
+	color: #666;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.serviceDetails .movie .movieList .movieActive{
+	background-color: #c81623;
+	color: #fff;
+}
+.movie .mv{
+	display: none;
+}
+/*正在热映*/
+.movie .showing{
+	overflow: hidden;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+/*即将上映*/
+.movie .comingSoon{
+	overflow: hidden;
+	margin-left: 4px;
+	margin-top: 4px;
+}
+.movie dl{
+	float: left;
+	width: 65px;
+	margin-right: 12px;
+}
+.movie dl dt a{
+	display: block;
+	width: 62px;
+} 
+.movie dl dt a img{
+	width: 100%;
+}
+.movie dl dd input{
+	width: 57px;
+	height: 20px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	display: block;
+	margin: 5px auto;
+	margin-bottom: 2px;
+}
+.movie .showing dl dd input{
+	background-color: #c81623;
+}
+.movie .comingSoon dl dd input{
+	background-color: #005EA7;
+}
+.serviceDetails .movie .movieHot{
+	margin-bottom: 2px;
+}
+.serviceDetails .movie .movieHot a{
+	color: #005ea7;
+	padding-left: 26px;
+	background: url(../img/banner/iframe-hot.png) no-repeat 0 center;
+}
+.serviceDetails .movie .movieHot a:hover{
+	color: #c81623;
+}
+
+/*游戏*/
+.serviceDetails .game{
+	width: 237px;
+	height: 165px;
+	padding: 10px 0 0 10px;
+	border: 1px solid #ccc;
+	border-top: none;
+	color: #666;
+	position: relative;
+}
+.serviceDetails .game .gameList{
+	overflow: hidden;
+}
+.serviceDetails .game .gameList li{
+	float: left;
+	margin-right: 10px;
+	color: #666;
+	padding: 0 3px;
+	cursor: pointer;
+}
+.serviceDetails .game .gameList .gameActive{
+	background-color: #c81623;
+	color: #fff;
+}
+/*装网页游戏的box*/
+.game .gameBox{
+	width: 720px;
+	height: 145px;
+	position: absolute;
+	top: 34px;
+	left: 10px;
+}
+/*点卡*/
+.game .gm{
+	margin-top: 10px;
+	height: 135px;
+	width: 240px;
+	float: left;
+}
+.game .gm p{
+	margin-bottom: 6px;
+	position: relative;
+	width: 228px;
+	height: 26px;
+}
+.game .gm p input{
+	width: 190px;
+	height: 22px;
+	padding-left: 38px;
+	border: 1px solid #ccc;
+}
+.game .gm p .gameName{
+	background: url(../img/banner/list-icon.png) no-repeat 206px center;
+}
+.game .gm p .gameMoney{
+	background: url(../img/banner/drop-icon.png) no-repeat 209px center;
+}
+.game .gm p span{
+	display: block;
+	width: 34px;
+	height: 24px;
+	text-align: center;
+	line-height: 24px;
+	position: absolute;
+	left: 1px;
+	top: 1px;
+	background-color: #f5f5f5;
+}
+/*充值方式*/
+.game .gm .rechargeWay{
+	margin-top: 10px;
+}
+.game .gm .rechargeWay span{
+	display: inline-block;
+	width: 74px;
+	color: #c81623;
+	font-size: 14px;
+}
+.game .gm .rechargeWay input{
+	vertical-align: -2px;
+}
+.game .gm .quickRecharg{
+	margin-top: 10px;
+}
+.game .gm .quickRecharg input{
+	width: 57px;
+	height: 20px;
+	color: #fff;
+	border: none;
+	border-radius: 3px;
+	font-size: 12px;
+	margin-bottom: 2px;
+	background-color: #c81623;
+	margin-right: 10px;
+}
+.game .gm .quickRecharg a{
+	color: #666;
+}
+.game .gm .quickRecharg a:hover{
+	color: #c81623;
+}
+/*网页游戏*/
+.game .webGame{
+	overflow: hidden;
+	padding-top: 10px;
+	height: 125px;
+}
+.game .webGame a{
+	float: left;
+	margin-right: 10px;
+	width: 105px;
+}
+.game .webGame a img{
+	width: 100%;
+}
+
+.banner .bannerRight .bannerRightBottom{
+	margin-top: 10px;
+}
+

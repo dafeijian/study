@@ -1,0 +1,106 @@
+/*网页右部的菜单*/
+.pageRightBorder{
+	height: 700px;
+	width: 6px;
+	background-color: #7a6e6e;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 101;
+}
+.pageRightMiddle{
+	position: fixed;
+	top: 40%;
+	right: 6px;
+	z-index: 101;
+}
+.pageRightMiddle li, .pageRightBottom li{
+	width: 29px;
+	height: 35px;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	margin-bottom: 1px;
+	background-color: #7a6e6e;
+	position: relative;
+	cursor: pointer;
+}
+.pageRightMiddle li:hover{
+	background-color: #C81623;
+}
+.pageRightBottom li:hover{
+	background-color: #C81623;
+}
+.pageRightMiddle li a, .pageRightBottom li a{
+	display: block;
+	height: 35px;
+	width: 0;
+	text-align: center;
+	line-height: 35px;
+	background-color: #C81623;
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-bottom-left-radius: 3px;
+	overflow: hidden;
+}
+.pageRightMiddle .middle1{
+	background: url(../img/borderRight/toolbars.png) no-repeat -88px -173px;
+	background-color: #7a6e6e;
+}
+.pageRightMiddle .middle2{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px 0px;
+	background-color: #7a6e6e;
+}
+.pageRightMiddle .middle2 span{
+	display: block;
+	width: 17px;
+	height: 15px;
+	text-align: center;
+	line-height: 15px;
+	border-radius: 8px;
+	position: absolute;
+	top: -8px;
+	right: 0;
+	color: #fff;
+	background-color: #B1191A;
+	border: 1px solid #B1191A;
+	display: none;
+}
+.pageRightMiddle .middle2:hover span{
+	background-color: #fff;
+	color: #B1191A;
+}
+.pageRightMiddle .middle3{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px -50px;
+	background-color: #7a6e6e;
+}
+.pageRightMiddle .middle4{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px -100px;
+	background-color: #7a6e6e;
+}
+.pageRightMiddle .middle5{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px -150px;
+	background-color: #7a6e6e;
+}
+.pageRightMiddle .middle6{
+	background: url(../img/borderRight/toolbars.png) no-repeat -190px -150px;
+	background-color: #7a6e6e;
+}
+
+/*下部*/
+.pageRightBottom{
+	position: fixed;
+	right: 6px;
+	bottom: 0;
+	z-index: 101;
+}
+.pageRightBottom .backToTop{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px -250px;
+	background-color: #7a6e6e;
+}
+.pageRightBottom  .feedback{
+	background: url(../img/borderRight/toolbars.png) no-repeat -50px -300px;
+	background-color: #7a6e6e;
+}

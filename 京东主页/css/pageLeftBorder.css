@@ -1,0 +1,42 @@
+.pageLeftBorder{
+	position: fixed;
+	left: 0;
+	top: 50%;
+	width: 26px;
+	margin-top: -45px;
+	z-index: 102;
+	display: none;
+	background-color: #fff;
+}
+.pageLeftBorder li{
+	color: #625351;
+	height: 28px;
+	line-height: 28px;
+	text-align: center;
+	border-bottom: 1px dashed #ccc;
+	cursor: pointer;
+	position: relative;
+}
+.pageLeftBorder li:last-child{
+	border-bottom: none;
+}
+.pageLeftBorder li span, .pageLeftBorder li a{
+	position: absolute;
+	left: 0;
+	top: 0;
+	display: block;
+	width: 26px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;	
+	display: none;
+}
+.pageLeftBorder li span{
+	color: #B61D1D;
+	background-color: #fff;
+}
+.pageLeftBorder li a{
+	color: #fff;
+	background-color: #B61D1D;
+}
+

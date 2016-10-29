@@ -1,0 +1,552 @@
+/*---- welcomeBox -----*/
+.welcomeBox{
+	width: 100%;
+	height: 30px;
+	background-color: #f1f1f1;
+}
+.welcome{
+	width: 1210px;
+	margin: 0 auto;
+	color: #666;
+	line-height: 30px;
+}
+.welcome u{
+	font: 400 15px/15px consolas;
+	position: relative;
+	top: -7px;
+}
+.welcome a{
+	color: #666;
+}
+.welcome a:hover{
+	color: #c81623;
+}
+.welcome h4{
+	line-height: 24px;
+	height: 24px;
+}
+/*---- welcomeLeft ----*/
+.welcome .welcome-left{
+	height: 30px;
+	display: inline-block;
+	float: left;
+	position: relative;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	padding: 0 10px;
+}
+.welcome-left:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome .welcome-left #address{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome .welcome-left #addressList{
+	position: absolute;
+	background-color: #fff;
+	top: 30px;
+	left: -1px;
+	width: 300px;
+	border: 1px solid #ddd;
+	border-top: none;
+	display: none;
+	padding: 6px;
+	z-index: 100;
+}
+#addressList > li{
+	float: left;
+	color: #979797;
+	width: 60px;
+}
+#addressList > li > a{
+	color: #666;
+	padding: 4px 7px;	
+}
+#addressList li .active{
+	background-color: #c81623;
+	color: #fff;
+}
+/*---- welcomeRight ----*/
+.welcome .welcome-right{
+	height: 30px;
+	float: right;
+}
+.welcome-right > li{
+	float: left;
+}
+.welcome-right li.spacer{
+	height: 12px;
+	width: 1px;
+	background-color: #dddddd;
+	margin: 9px 1px 0;
+}
+.welcome-right > li > a{
+	padding: 0 10px;
+	color: #666;
+}
+/*----- 登录 -----*/
+.welcome-right .login{
+	color: #666666;
+	border-left: none;
+}
+/*---- 注册 ------*/
+.welcome-right .register{
+	color: #c81623;
+	border-left: none;
+}
+/*---- 我的京东 ----*/
+.welcome-right .myJD{
+	position: relative;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	padding-right: 5px;
+}
+.welcome-right .myJD:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome-right .myJD > a{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome-right .myJD div{
+	position: absolute;
+	background-color: #fff;
+	top: 30px;
+	left: -1px;
+	width: 265px;
+	border: 1px solid #ddd;
+	border-top: none;
+	padding: 10px 15px;
+	display: none;
+	z-index: 100;
+}
+.welcome-right .myJD div a{
+	color: #666;
+}
+.welcome-right .myJD div a:hover{
+	color: #c81623;
+}
+.welcome-right .myJD div dl{
+	height: 60px;
+}
+.welcome-right .myJD div dl dt{
+	float: left;
+	margin-right: 10px;
+}
+.welcome-right .myJD div dl dd{
+	float: left;
+}
+.welcome-right .myJD div dl dd p{
+	height: 24px;
+	line-height: 24px;
+}
+.welcome-right .myJD div dl dd a{
+	margin-right: 10px;
+	float: left;
+}
+.welcome-right .myJD div dl dd .spacer{
+	height: 12px;
+	width: 1px;
+	background-color: #666;
+	margin-top: 7px;
+}
+.welcome-right .myJD #myList{
+	margin-top: 10px;
+}
+#myList li{
+	float: left;
+	width: 128px;
+	height: 22px;
+	line-height: 24px;
+}
+/*------ 手机京东 ------*/
+.welcome-right .phoneJD{
+	background: url(../img/bgImg/01.png) no-repeat 8px 5px;
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	position: relative;
+	padding-right: 5px;
+}
+.welcome-right .phoneJD:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome-right .phoneJD > a{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome-right .phoneJD > a{
+	padding-left: 26px;
+}
+.welcome-right .phoneJD #phoneJD{
+	width: 160px;
+	height: 185px;
+	padding-left: 90px;
+	padding-top: 10px;
+	border: 1px solid #ddd;
+	border-top: none;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+	background: url(../img/welcome/pic03.jpg) no-repeat center;
+}
+#phoneJD .phoneJDtitle{
+	height: 15px;
+	width: 90px;
+	display: block;
+}
+#phoneJD p{
+	color: #C81623;
+	padding-left: 10px;
+	line-height: 24px;
+}
+#phoneJD .phoneBox{
+	height: 44px;
+}
+#phoneJD .iphone, #phoneJD .android{
+	width: 56px;
+	height: 44px;
+	float: left;
+}
+#phoneJD .ipad{
+	width: 45px;
+	height: 44px;
+	float: left;
+}
+/*顶部*/
+#phoneJD .phoneJDTop{
+	height: 96px
+}
+/*----- 关注京东 -------*/
+.welcome-right .concernJD{
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	position: relative;
+	padding-right: 5px;
+}
+.welcome-right .concernJD:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome-right .concernJD > a{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome-right .concernJD #concernJD{
+	width: 77px;
+	text-align: center;
+	border: 1px solid #ddd;
+	border-top: none;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	padding-top: 10px;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+}
+.welcome-right .concernJD #concernJD img{
+	display: block;
+	margin: 0 auto;
+}
+/*----- 客服服务 -----*/
+.welcome-right .service{
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	position: relative;
+	padding-right: 5px;
+}
+.welcome-right .service:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome-right .service > a{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome-right .service #service{
+	width: 170px;
+	border: 1px solid #ddd;
+	border-top: none;
+	position: absolute;
+	left: -1px;
+	top: 30px;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+}
+#service .custom{
+	padding-left: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #ddd;
+}
+#service .custom ul{
+	overflow: hidden;
+}
+#service .custom li{
+	float: left;
+	margin-right: 30px;
+	height: 24px;
+	line-height: 24px;
+}
+#service .merchant{
+	padding-left: 10px;
+	padding-bottom: 10px;
+}
+#service .merchant p{
+	height: 24px;
+	line-height: 24px;
+}
+#service .merchant a{
+	margin-right: 15px;
+}
+/*------ 网页导航 ------*/
+.welcome-right .welcomeNav{
+	border-left: 1px solid #f1f1f1;
+	border-right: 1px solid #f1f1f1;
+	position: relative;
+	padding-right: 5px;
+}
+.welcome-right .welcomeNav:hover{
+	background-color: #fff;
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+}
+.welcome-right .welcomeNav > a{
+	padding-right: 14px;
+	background: url(../img/welcome/arrowDown.png) no-repeat right center;
+}
+.welcome-right .welcomeNav #welcomeNav{
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 1190px;
+	border: 1px solid #ddd;
+	border-top: none;
+	position: absolute;
+	right: -1px;
+	top: 30px;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+}
+.welcome-right .welcomeNav #welcomeNav ul{
+	float: left;
+	padding-left: 20px;
+	overflow: hidden;
+}
+.welcome-right .welcomeNav #welcomeNav ul li{
+	float: left;
+	width: 85px;
+	height: 24px;
+}
+.welcome-right .welcomeNav #welcomeNav .firstul{
+	width: 340px;
+}
+.welcome-right .welcomeNav #welcomeNav .otherul{
+	width: 255px;
+	border-left: 1px solid #dddddd;
+}
+
+/*---- 头部 ------*/
+.headerBox{
+	width: 100%;
+	border-bottom: 2px solid #b1191a;
+	background: url(../img/header/shoppingCar.png) no-repeat right bottom;
+}
+.headerBox .header{
+	width: 1210px;
+	margin: 0 auto;
+}
+.headerBox .header .header-top{
+	padding-top: 20px;
+	height: 80px;
+}
+.headerBox .header .header-top h1{
+	float: left;
+}
+.headerBox .header .header-top h1 a{
+	display: block;
+	width: 270px;
+	height: 60px;
+	background: url(../img/header/logo.png);
+}
+/*----- 搜索框 -----*/
+.header .header-top .search{
+	float: left;
+	margin-left: 90px;
+	margin-top: 5px;
+	height: 70px;
+}
+.header .header-top .search form{
+	display: block;
+}
+.header .header-top .search #searchTxt{
+	float: left;
+	width: 444px;
+	height: 32px;
+	padding: 0 5px;
+	color: #999999;
+	font-size: 14px;
+	border: 2px solid #b61d1d;
+}
+.header .header-top .search #searchBtn{
+	float: left;
+	width: 80px;
+	height: 36px;
+	background-color: #b61d1d;
+	font-size: 16px;
+	color: #fff;
+	border: none;
+	font-family: "黑体";
+}
+#searchList li{
+	float: left;
+	margin-right: 10px;
+}
+#searchList li a{
+	color: #666;
+}
+#searchList li a:hover{
+	color: #C81623;
+}
+#searchList li .active{
+	color: #C81623;
+}
+/*------ 购物车 ------*/
+.header .header-top .shoppingCar{
+	margin-top: 5px;
+	margin-right: 64px;
+	padding-left: 42px;
+	float: right;
+	width: 98px;
+	height: 34px;
+	line-height: 34px;
+	color: #7d7d7d;
+	border: 1px solid #dfdfdf;
+	background: url(../img/bgImg/01.png) no-repeat 20px -48px;
+	background-color: #f9f9f9;
+	position: relative;
+}
+.header .header-top .shoppingCar:hover{
+	background: url(../img/bgImg/01.png) no-repeat 20px -106px;
+	background-color: #fff;
+	height: 36px;
+	border-bottom: none;
+}
+.header .header-top .shoppingCar a{
+	color: #666;
+}
+.header .header-top .shoppingCar a:hover{
+	color: #C81623;
+}
+.header .header-top .shoppingCar #shoppingNum{
+	display: block;
+	width: 16px;
+	height: 14px;
+	text-align: center;
+	line-height: 14px;
+	color: #fff;
+	background-color: #c81623;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	position: absolute;
+	right: 20px;
+	top: -4px;
+}
+.header .header-top .shoppingCar #shoppingList{
+	width: 290px;
+	position: absolute;
+	padding: 5px 10px;
+	top: 35px;
+	right: -1px;
+	border: 1px solid #dfdfdf;
+	border-top: none;
+	display: none;
+	background-color: #fff;
+	z-index: 100;
+}
+#shoppingList li{
+	height: 50px;
+	line-height: 50px;
+	padding-left: 20px;
+	padding: 5px 0;
+	border-bottom: 1px dotted #ccc;
+}
+#shoppingList li:first-child{
+	color: #7d7d7d;
+	text-align: right;
+	background: url(../img/floor1/product_home_1.0.0.png) no-repeat 40px -440px;
+}
+#shoppingList li:last-child{
+	border-bottom: none;
+}
+#shoppingList li a:first-child{
+	float: left;
+	width: 50px;
+	height: 50px;
+	margin-right: 10px;
+}
+#shoppingList li a:last-child{
+	float: left;
+	width: 200px;
+	height: 40px;
+	line-height: 20px;
+	overflow: hidden;
+	margin: 5px 0;
+}
+#shoppingList li a img{
+	width: 48px;
+	height: 48px;
+	border: 1px solid #ccc;
+}
+.header .header-top .shoppingCar #shoppingBorder{
+	width: 172px;
+	height: 1px;
+	background-color: #dfdfdf;
+	position: absolute;
+	left: -172px;
+	bottom: 0;
+	display: none;
+	z-index: 101;
+}
+
+/*---- 头部的底部 -----*/
+.header .header-bottom{
+}
+.header .header-bottom #goodsNav{
+	height: 44px;
+}
+#goodsNav li{
+	float: left;
+	height: 44px;
+	line-height: 44px;
+	font-size: 16px;
+	padding-left: 10px;
+	margin-right: 30px;
+}
+#goodsNav li a{
+	color: #333333;
+}
+#goodsNav li a:hover{
+	color: #C81623;
+}
+#goodsNav #allGoods{
+	width: 200px;
+	background-color: #b1191a;
+	margin-bottom: -2px;
+	margin-right: 10px;
+}
+#goodsNav #allGoods a{
+	color: #fff;
+}

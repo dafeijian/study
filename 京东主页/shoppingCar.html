@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>京东｜购物车</title>
+		<link rel="stylesheet" href="css/general.css" />
+		<link rel="stylesheet" href="css/index.css" />
+		<link rel="stylesheet" href="css/shoppingCar.css" />
+		<link rel="stylesheet" href="css/slogen.css" />
+		<link rel="stylesheet" href="css/footer.css" />
+		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="js/cookieMethods.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+		<script type="text/javascript" src="js/shoppingCar.js" ></script>
+	</head>
+	<body>
+		<div class="welcomeBox">
+			<div class="welcome">
+				<!--welcome-left-->
+				<div class="welcome-left">
+					送至：
+					<a href="#" id="address">北京</a>
+					<ul id="addressList">
+					</ul>
+				</div>
+				
+				<!--welcome-right-->
+				<ul class="welcome-right">
+					<li><a class="login" href="#">您好，请登录</a></li>
+					<li><a class="register" href="#">免费注册</a></li>
+					<li class="spacer"></li>
+					<li><a href="#">我的订单</a></li>
+					<li class="spacer"></li>
+					<li class="myJD">
+						<a href="#">我的京东</a>
+						<div id="myJD">
+							<dl>
+								<dt><img src="img/welcome/myJD.png" /></dt>
+								<dd>
+									<h4><a href="#">您好，请登录</a></h4>
+									<p>
+										<a href="#">优惠卷</a>
+										<a class="spacer"></span>
+										<a href="#">消息</a>
+									</p>
+								</dd>
+							</dl>
+							<ul id="myList" class="clear">
+								<li><a href="#">待处理订单</a></li>
+								<li><a href="#">咨询回复</a></li>
+								<li><a href="#">降价商品</a></li>
+								<li><a href="#">返修退换货</a></li>
+								<li><a href="#">我的关注</a></li>
+								<li><a href="#">我的京豆</a></li>
+								<li><a href="#">我的理财</a></li>
+								<li><a href="#">京东白条</a></li>
+							</ul>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li><a href="#">京东会员</a></li>
+					<li class="spacer"></li>
+					<li><a href="#">企业采购</a></li>
+					<li class="spacer"></li>
+					<li class="phoneJD">
+						<a href="#">手机京东</a>
+						<div id="phoneJD">
+							<div class="phoneJDTop">
+								<a class="phoneJDtitle" href="#"></a>
+								<p>新人专享188元大礼包</p>
+								<div class="phoneBox">
+									<a class="iphone" href="#"></a>
+									<a class="android" href="#"></a>
+									<a class="ipad" href="#"></a>
+								</div>	
+							</div>
+							<div class="phoneJDBottom">
+								<a class="phoneJDtitle" href="#"></a>
+								<p>扫一扫 让赚钱再轻松一点</p>
+								<div class="phoneBox">
+									<a class="iphone" href="#"></a>
+									<a class="android" href="#"></a>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="concernJD">
+						<a href="#">关注京东</a>
+						<div id="concernJD">
+							<img src="img/welcome/code03.png" />
+							<p>关注京东</p>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="service">
+						<a href="#">客户服务</a>
+						<div id="service">
+							<div class="custom">
+								<h4>客服</h4>
+								<ul>
+									<li><a href="#">帮助中心</a></li>
+									<li><a href="#">售后服务</a></li>
+									<li><a href="#">在线客服</a></li>
+									<li><a href="#">意见建议</a></li>
+									<li><a href="#">电话客服</a></li>
+									<li><a href="#">客服邮箱</a></li>
+									<li><a href="#">金融咨询</a></li>
+								</ul>
+							</div>
+							<div class="merchant">
+								<h4>商户</h4>
+								<p>
+									<a href="#">京东商学院</a>
+									<a href="#">商家入驻</a>
+								</p>
+							</div>
+						</div>
+					</li>
+					<li class="spacer"></li>
+					<li class="welcomeNav">
+						<a href="#">网站导航</a>
+						<div id="welcomeNav">
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--购物车的顶部-->
+		<div class="shoppingCarheaderBox">
+			<div class="shoppingCarheader">
+				<h1><a href="#"><img src="img/shoppingCar/logo-201305.png" /></a></h1>
+				<div class="cartSearch">
+					<input class="cartSearchTxt" type="text" placeholder="自营" />
+					<input class="cartSearchBtn" type="button" value="搜索" />
+				</div>
+			</div>
+		</div>
+		
+		<!--购物车的主要内容-->
+		<div class="cartMainBox">
+			<div class="cartMain">
+				<!--购物车为空-->
+				<div class="cartEmpty">
+					<div class="cartMessage">
+						<ul>
+							<li>购物车空空的哦~，去看看心仪的商品吧~</li>
+							<li><a href="#">去购物&gt;</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<!--购物车不为空-->
+				<div class="cartNotEmpty">
+					<h3>全部商品</h3>
+					<table class="cartTable">
+						<thead>
+							<tr>
+								<th width="100px"><input type="checkbox" name="selectAll" class="selectAll cb" />全选</th>
+								<th width="468px" align="left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;商品</th>
+								<th width="100px">单价（元）</th>
+								<th width="120px">数量</th>
+								<th width="100px">小计（元）</th>
+								<th width="100px">操作</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+			</div>
+		</div>
+		
+		<!--结算框-->
+		<div class="statementBox">
+			<div class="statement">
+				<div class="statementLeft">
+					<input type="checkbox" name="selectAll" class="selectAll" />全选
+					<a class="delSelected">删除选中的商品</a>
+					<a href="#">移到我的关注</a>
+					<a href="#">清除下柜商品</a>	
+				</div>
+				<div class="statementRight">
+					总价：<span class="allPrice">¥0.00</span>
+					<input class="statementBtn" type="button" value="去结算" />
+				</div>
+			</div>
+		</div>
+		
+		<!--猜你喜欢-->
+		<div class="mightYouLikeBox">
+			<div class="mightYouLike">
+				<h3>猜你喜欢</h3>
+				<ul class="likeProductList">
+					<li productId="p001">
+						<div class="pImg">
+							<a href="#"><img src="img/shoppingCar/001.jpg" /></a>
+						</div>
+						<div class="pName">
+							<a href="#">荣耀 NOTE 8 4GB+64GB 全网通版 铂光金</a>
+						</div>
+						<div class="pPrice">
+							<em>￥</em>
+							<span>2499.00</span>
+						</div>
+						<div class="pBtn">
+							<a class="addCart"><span></span>加入购物车</a>
+						</div>
+					</li>
+					<li productId="p002">
+						<div class="pImg">
+							<a href="#"><img src="img/shoppingCar/002.jpg" /></a>
+						</div>
+						<div class="pName">
+							<a href="#">雅伦（YALUN）太阳镜女款防紫外线遮阳墨镜女士旅游驾驶偏光眼镜 经典黑-1</a>
+						</div>
+						<div class="pPrice">
+							<em>￥</em>
+							<span>149.00</span>
+						</div>
+						<div class="pBtn">
+							<a class="addCart"><span></span>加入购物车</a>
+						</div>
+					</li>
+					<li productId="p003">
+						<div class="pImg">
+							<a href="#"><img src="img/shoppingCar/003.jpg" /></a>
+						</div>
+						<div class="pName">
+							<a href="#">荣耀 V8 4GB+32GB 铂光金 移动联通4G手机 双卡双待双通</a>
+						</div>
+						<div class="pPrice">
+							<em>￥</em>
+							<span>2299.00</span>
+						</div>
+						<div class="pBtn">
+							<a class="addCart"><span></span>加入购物车</a>
+						</div>
+					</li>
+					<li productId="p004">
+						<div class="pImg">
+							<a href="#"><img src="img/shoppingCar/004.jpg" /></a>
+						</div>
+						<div class="pName">
+							<a href="#">农心韩国进口食品虾条原味生鲜虾制成 经典零食 400g一袋 休闲零食</a>
+						</div>
+						<div class="pPrice">
+							<em>￥</em>
+							<span>27.50</span>
+						</div>
+						<div class="pBtn">
+							<a class="addCart"><span></span>加入购物车</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--slogen-->
+		<div class="slogenBox">
+			<ul class="slogen">
+				<li><a href="#"><img src="img/footer/service_items_1.png" /></a></li>
+				<li><a href="#"><img src="img/footer/service_items_2.png" /></a></li>
+				<li><a href="#"><img src="img/footer/service_items_3.png" /></a></li>
+				<li><a href="#"><img src="img/footer/service_items_4.png" /></a></li>
+			</ul>
+		</div>
+		
+		<!--网页的脚部-->
+		<div class="footerBox">
+			<div class="footer">
+				<!--脚部的头部-->
+				<div class="footerTop">
+					<dl>
+						<dt>购物指南</dt>
+						<dd>
+							<p><a href="#">会员介绍</a></p>
+							<p><a href="#">生活旅行/团购</a></p>
+							<p><a href="#">常见问题</a></p>
+							<p><a href="#">大家电</a></p>
+							<p><a href="#">联系客服</a></p>
+						</dd>
+					</dl>
+					<dl>	
+						<dt>配送方式</dt>
+						<dd>
+							<p><a href="#">上门自提</a></p>
+							<p><a href="#">211限时达</a></p>
+							<p><a href="#">配送服务查询</a></p>
+							<p><a href="#">配送费收取标准</a></p>
+							<p><a href="#">海外配送</a></p>
+						</dd>
+					</dl>
+					<dl>
+						<dt>支付方式</dt>
+						<dd>
+							<p><a href="#">货到付款</a></p>
+							<p><a href="#">在线支付</a></p>
+							<p><a href="#">分期付款</a></p>
+							<p><a href="#">邮局汇款</a></p>
+							<p><a href="#">公司转账</a></p>
+						</dd>
+					</dl>
+					<dl>	
+						<dt>售后服务</dt>
+						<dd>
+							<p><a href="#">售后政策</a></p>
+							<p><a href="#">价格保护</a></p>
+							<p><a href="#">退款说明</a></p>
+							<p><a href="#">返修/退换货</a></p>
+							<p><a href="#">取消订单</a></p>
+						</dd>
+					</dl>
+					<dl class="feature">
+						<dt>特色服务</dt>
+						<dd>
+							<p><a href="#">夺宝岛</a></p>
+							<p><a href="#">DIY装机</a></p>
+							<p><a href="#">延保服务</a></p>
+							<p><a href="#">京东E卡</a></p>
+							<p><a href="#">京东通信</a></p>
+							<p><a href="#">京东JD+</a></p>
+						</dd>
+					</dl>
+					<dl class="cover">
+						<dt>京东自营覆盖区县</dt>
+						<dd>
+							<p>京东已向全国2654个区县提供自营配送服务，支持货到付款、POS机刷卡和售后上门服务。</p>
+							<p><a href="#">查看详情&gt;</a></p>
+						</dd>
+					</dl>
+				</div>
+				
+				<!--脚部的底部-->
+				<div class="footerBottom">
+					<ul class="footerNav">
+						<li><a href="#">关于我们</a>|</li>
+						<li><a href="#">联系我们</a>|</li>
+						<li><a href="#">联系客服</a>|</li>
+						<li><a href="#">商家入驻</a>|</li>
+						<li><a href="#">营销中心</a>|</li>
+						<li><a href="#">手机京东</a>|</li>
+						<li><a href="#">友情链接</a>|</li>
+						<li><a href="#">销售联盟</a>|</li>
+						<li><a href="#">京东社区</a>|</li>
+						<li><a href="#">风险监测</a>|</li>
+						<li><a href="#">京东公益</a>|</li>
+						<li><a href="#">English Site</a>|</li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<p class="p1"><img src="img/footer/001.png" />&nbsp;<a href="#">京公网安备 11000002000088号</a>&nbsp;&nbsp;|&nbsp;&nbsp;京ICP证070359号&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">互联网药品信息服务资格证编号(京)-经营性-2014-0008</a>&nbsp;&nbsp;|&nbsp;&nbsp;新出发京零 字第大120007号</p>
+					<p>互联网出版许可证编号新出网证(京)字150号&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">出版物经营许可证</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">网络文化经营许可证京网文[2014]2148-348号</a>&nbsp;&nbsp;|&nbsp;&nbsp;违法和不良信息举报电话：4006561155</p>
+					<p>Copyright&nbsp;&copy;&nbsp;2004&nbsp;-&nbsp;2016&nbsp;&nbsp;京东JD.com 版权所有&nbsp;&nbsp;|&nbsp;&nbsp;消费者维权热线：4006067733</p>
+					<p>京东旗下网站：京东钱包</p>
+					<div class="footerImgList">
+						<a href="#"><img src="img/footer/101.png" /></a>
+						<a href="#"><img src="img/footer/102.jpg" /></a>
+						<a href="#"><img src="img/footer/103.jpg" /></a>
+						<a href="#"><img src="img/footer/104.png" /></a>
+						<a href="#"><img src="img/footer/105.jpg" /></a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</body>
+</html>

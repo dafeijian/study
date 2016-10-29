@@ -1,0 +1,71 @@
+[
+	{
+		"id": 1,
+		"title": "新发现",
+		"content":
+		[
+			{
+				"tit": "华硕灵耀3",
+				"desc": "匠心工艺之作",
+				"promotion": "震撼上市，优惠多多",
+				"src": "01.jpg"
+			},
+			{
+				"tit": "领券中心",
+				"desc": "乐视手机券",
+				"promotion": "立减50元",
+				"src": "02.jpg"
+			},
+			{
+				"tit": "限时秒杀",
+				"desc": "好货连连",
+				"promotion": "精彩秒不停",
+				"src": "03.jpg"
+			}
+		]
+	},
+	{
+		"id": 2,
+		"title": "好东西",
+		"content": 
+		[
+			{
+				"tit": "领券中心",
+				"desc": "乐视手机券",
+				"promotion": "立减50元",
+				"src": "04.jpg"
+			},
+			{
+				"tit": "限时秒杀",
+				"desc": "好货连连",
+				"promotion": "精彩秒不停",
+				"src": "05.jpg"
+			}
+		]
+	},
+	{
+		"id": 3,
+		"title": "品牌街",
+		"content":
+		[
+			{
+				"tit": "华硕灵耀3",
+				"desc": "匠心工艺之作",
+				"promotion": "震撼上市，优惠多多",
+				"src": "01.jpg"
+			},
+			{
+				"tit": "限时秒杀",
+				"desc": "好货连连",
+				"promotion": "精彩秒不停",
+				"src": "02.jpg"
+			},
+			{
+				"tit": "领券中心",
+				"desc": "乐视手机券",
+				"promotion": "立减50元",
+				"src": "03.jpg"
+			}	
+		]
+	}
+]
